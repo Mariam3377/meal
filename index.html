@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <!-- font style -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <!-- icon -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- css style -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+
+
+<body class="bg-dark text-white">
+    <!-- loading -->
+    <!-- <div class="loading align-items-center justify-content-center d-flex h-100">
+        <i class="fa-solid fa-spinner fa-spin fa-xl load"></i>
+   </div> -->
+
+<!-- aside  -->
+<aside class=" d-flex position-fixed top-0 bottom-0 z-3">
+    <div class="link bg-black p-3 d-none">
+<div class=" ">
+    <div class="mb-5"> 
+        <a href="">Search</a><br>
+        <a href="#catagery" onclick="Catagery()">Catagery</a><br>
+        <a href="#Area" onclick="Area()">Area</a><br>
+        <a href="#ingraden"onclick="Ingraden()">Ingredients</a><br>
+        <a href="#contact" onclick="contact()" >Contact Us</a>
+       </div>
+       
+     <div>
+            <i class="fa-brands fa-facebook fs-5 pointer"></i>
+            <i class="fa-solid fa-globe fs-5 pointer"></i>
+            <i class="fa-brands fa-twitter fs-5 pointer"></i>
+            <br>
+            <h3 class="w-75 h6">Copyright Â© 2019 All Rights Reserved.</h3>
+        </div>
+</div>
+ 
+    </div>
+
+
+    <div class="d-flex flex-column justify-content-between align-items-center py-4 bg-white w-25">
+        <img src="logo.png" alt="" class="w-100 ">
+        <i class="fa-solid fa-bars text-dark pointer fs-1 click "></i>
+
+        <div class="text-black ">
+            <i class="fa-solid fa-globe text-dark pointer"></i>
+            <br>
+            <i class="fa-sharp fa-solid fa-share-nodes text-dark pointer"></i>
+
+
+        </div>
+    </div>
+</aside>
+
+
+
+<!-- main -->
+<section id="main" class="d-block">
+    <section id="page1" >
+        <div class="container py-3">
+            <div class="row gy-4" id="rowData">
+            </div>
+    </section>
+    <section class="d-none" id="page2">
+        <div class="container py-3">
+            <div class="row" id="recapic" >
+
+            </div>
+        </div>
+    </section>
+</section>
+<!-- search -->
+
+
+<!-- catagery -->
+<section id="catagery" class="d-none">
+    <section  >
+        <div class="container py-3">
+            <div class="row gy-4" id="CatData">
+            </div>
+    </section>
+    <section class="d-none" >
+        <div class="container py-3">
+            <div class="row" id="CatData2" >
+<i></i>
+            </div>
+        </div>
+    </section>
+</section>
+<!-- Area -->
+<section id="Area" class="d-none">
+    <section  >
+        <div class="container py-3">
+            <div class="row gy-4" id="Arya">
+          
+            </div>
+    </section>
+    <section class="d-none" >
+        <div class="container py-3">
+            <div class="row" id="Arya2" >
+
+            </div>
+        </div>
+    </section>
+
+</section>
+<!--  ingraden -->
+<section id="ingraden" class="d-none">
+    <section  >
+        <div class="container py-3">
+            <div class="row gy-4" id="ingraden1">
+          
+            </div>
+    </section>
+    <section class="d-none" >
+        <div class="container py-3">
+            <div class="row" id="ingraden1" >
+               
+            </div>
+        </div>
+    </section>
+
+</section>
+
+
+<!-- contact -->
+<section id="contact" class="d-none">
+    <section  >
+        <div class="container py-3">
+            <div class="row gy-4" id="cintactUs">
+             <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control bg-black" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Name</label>
+                  </div>
+             </div>
+             <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control bg-black" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+             </div>
+
+             <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control bg-black" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Phone</label>
+                  </div>
+             </div>
+             <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control bg-black" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Age</label>
+                  </div>
+             </div>
+             <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="password" class="form-control bg-black" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+             </div>
+             <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="password" class="form-control bg-black" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">RePassword</label>
+                  </div>
+             </div>
+            <div class="">
+                <button class="btn btn-primary m-auto d-block">Submit</button>
+            </div>
+
+            </div>
+    </section>
+
+</section>
+
+
+    <!-- js -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
